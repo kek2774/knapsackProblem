@@ -1,0 +1,8 @@
+Приложение x64 native console for vs 22
+set "WindowsSdkDir=C:\Program Files (x86)\Windows Kits\10\"
+set "WindowsSDKVersion=10.0.26100.0\"
+set INCLUDE=%INCLUDE%;%WindowsSdkDir%Include\%WindowsSDKVersion%ucrt;%WindowsSdkDir%Include\%WindowsSDKVersion%shared;%WindowsSdkDir%Include\%WindowsSDKVersion%um
+set LIB=%LIB%;%WindowsSdkDir%Lib\%WindowsSDKVersion%ucrt\x64;%WindowsSdkDir%Lib\%WindowsSDKVersion%um\x64
+set PATH=%PATH%;C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x64
+cd "directory"
+python setup.py build_ext --inplace
